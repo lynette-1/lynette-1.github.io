@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-test</title>
+</head>
+<body>
+    <h1>hello</h1>
+    <p>这是AI交互测试网页</p>
+    <script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/1.2.0-beta.5/libs/oversea/index.js"></script>
+    <script>
+        new CozeWebSDK.WebChatClient({
+          config: {
+            bot_id: '7488197785724944390',
+          },
+          componentProps: {
+            title: 'Coze',
+          },
+          auth: {
+            type: 'token',
+            token: 'pat_BbwOeaQLHscsgNZgq8DUl4yFcPrGGzWwnBy6l5Fs0eoyNW8smZZfIkqMd1yycAH3',
+            onRefreshToken: function () {
+              return 'pat_BbwOeaQLHscsgNZgq8DUl4yFcPrGGzWwnBy6l5Fs0eoyNW8smZZfIkqMd1yycAH3'
+            }
+          }
+        });
+      </script>
+</body>
+</html>
